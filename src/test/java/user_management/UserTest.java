@@ -73,6 +73,13 @@ public class UserTest {
     }
 
     @Test
+    public void testContstructorWithStringPassword() throws Exception {
+        String plainTextPassword = "secret";
+        user = new User(1, "Wilhem", "wilhem@zipcodewilmington.com", plainTextPassword);
+        assertTrue(user.getPassword().matches(plainTextPassword));
+    }
+
+    @Test
     public void testToString() {
         assertEquals("Wilhem - wilhem@zipcodewilmington.com", user.toString());
 

@@ -50,7 +50,7 @@ public class ElementTest {
 
     @Test
     public void getAtomic_mass() {
-        assertEquals(1.008, element.getAtomic_mass(), .01);
+        assertEquals(1.008, element.getAtomicMass(), .01);
     }
 
     @Test
@@ -75,7 +75,7 @@ public class ElementTest {
 
     @Test
     public void getDiscovered_by() {
-        assertEquals("Henry Cavendish", element.getDiscovered_by());
+        assertEquals("Henry Cavendish", element.getDiscoveredBy());
     }
 
     @Test
@@ -85,12 +85,12 @@ public class ElementTest {
 
     @Test
     public void getMolar_heat() {
-        assertEquals(28.836, element.getMolar_heat(), .01);
+        assertEquals(28.836, element.getMolarHeat(), .01);
     }
 
     @Test
     public void getNamed_by() {
-        assertEquals("Antoine Lavoisier", element.getNamed_by());
+        assertEquals("Antoine Lavoisier", element.getNamedBy());
     }
 
     @Test
@@ -115,7 +115,7 @@ public class ElementTest {
 
     @Test
     public void getSpectral_img() {
-        assertEquals("https://en.wikipedia.org/wiki/File:Hydrogen_Spectra.jpg", element.getSpectral_img());
+        assertEquals("https://en.wikipedia.org/wiki/File:Hydrogen_Spectra.jpg", element.getSpectralImg());
     }
 
     @Test
